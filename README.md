@@ -7,15 +7,18 @@ Generates sparse distributed representations for a provided list of words by nai
 Once you've generated the data:
 
 - `similarTo('Google')` outputs `[('Microsoft', 5), ('Amazon', 3), ('Samsung', 3), ...]`
-- `similarTo('Toyota')` outputs `[('Lexus', 13), ('Volkswagen', 7), ('Ford', 6), ('Hyundai', 4), ('Nissan', 4), ('Honda', 3)]`
-- `similarTo('Colombia')` outputs `[('Venezuela', 11), ('Ecuador', 10)]`
+- `similarTo('Toyota')` outputs `[('Lexus', 13), ('Volkswagen', 7), ('Ford', 6), ('Hyundai', 4), ...]`
+- `similarTo('Colombia')` outputs `[('Venezuela', 11), ('Ecuador', 10), ('Peru', 9), ...]`
 
 ## How to generate the data
 
-Several example lists are provided. To generate the data:
+To see available command line options: `generate.py -h`
 
+Example usages:
 - `generate.py -l countries`
 - `generate.py --list topBrands --nworkers 10`
+
+Several example lists are provided in the `/lists` directory.
 
 ## Example output
 
