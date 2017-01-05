@@ -1,10 +1,10 @@
 # Binary word embeddings from Wikipedia
 
 Generates binary word embeddings for a provided list of words by naively analyzing Wikipedia.
-Was meant partially as an exercise in Python for multi-threading and web requests.
+Was meant partially as an exercise in Python for multi-threading and asynchronous web requests.
 
-For each word in the provided list the program fetches `n` Wikipedia articles.
-Each article is represented by a bit in the embedding - if any word in the list appears in a particular article that bit is set to 1.
+For each word in the provided list the program fetches `n` related Wikipedia articles (where `n` is a tunable parameter).
+Each article is represented by a bit in the embedding - if a word (in our list) appears in a particular article we set the appropriate bit to 1.
 This is an extremely simple approach to word embedding but the latent space discovered still shows very sensible semantic properties.
 
 I only show similarity experiments here but word additions and subtractions also give sensible results in some cases.
