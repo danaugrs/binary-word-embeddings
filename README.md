@@ -4,7 +4,7 @@ Generates binary word embeddings for a provided list of words by naively analyzi
 Was meant partially as an exercise in Python for multi-threading and web requests.
 
 For each word in the provided list the program fetches `n` Wikipedia articles.
-Each article is represented by a bit in the embedding - if the word appears in that article the bit is set to 1.
+Each article is represented by a bit in the embedding - if any word in the list appears in a particular article that bit is set to 1.
 This is an extremely simple approach to word embedding but the latent space discovered still shows very sensible semantic properties.
 
 I only show similarity experiments here but word additions and subtractions also give sensible results in some cases.
